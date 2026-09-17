@@ -1,0 +1,12 @@
+[project]
+name = "local-llm-app"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "edge-tts>=7.2.8",
+    "faster-whisper>=1.2.1",
+    "ollama>=0.6.2",
+    "pygame>=2.6.1",
+    "requests>=2.34.2",
+    "sounddevice>=0.5.6",
+]
