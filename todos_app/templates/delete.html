@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main>
+    <h2>Task 삭제</h2>
+    <p>"{{ todo.task }}" 항목을 정말 삭제하시겠습니까?</p>
+
+    <div class="task-actions">
+        <form action="/delete/{{ todo.id }}" method="post">
+            <button class="todo-btn" type="submit">Delete</button>
+        </form>
+        <a class="todo-btn" href="/">Cancel</a>
+    </div>
+</main>
+{% endblock content %}

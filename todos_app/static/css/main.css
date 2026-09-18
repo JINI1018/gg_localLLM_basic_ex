@@ -1,0 +1,95 @@
+/* 
+셀렉터 {
+  속명1: 속성값1;
+  속명2: 속성값2;
+}
+
+*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  background: #000000;
+}
+
+main{
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+main p.head_img{
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  background-image: url("../images/todo_img.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center center;
+  margin-bottom: 20px;
+
+}
+
+textarea{
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  resize: none;
+}
+
+button{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #eee;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+.task-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.task-actions form {
+  margin: 0;
+  padding: 0;
+}
+
+.todo-btn {
+  display: inline-block;
+  width: 80px;
+  width: auto;
+  height: auto;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #eee;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.task{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 8px 0;
+border-bottom: 1px solid #ccc;
+}
+
+.task:first-child{
+  border-top: 1px solid #ccc;
+}
